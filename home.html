@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 
@@ -20,7 +20,7 @@
     {% with messages = get_flashed_messages()%}
       {% if messages%}
         {% for message in messages%}
-          <p style="color:#D57E8C;">{{message}}</p>
+          <p style="color:#C8A4D4;">{{message}}</p>
         {%endfor%}
       {%endif%}
     {%endwith%}
@@ -30,38 +30,29 @@
       
       <div class="row"> <!--top row, currently contains welcome message & action buttons, time to competition, and gdrive links-->
         <div class="col wf"><br><!--start of "top left panel"-->
-          <div class="card-body" style="border-radius:6px; background-color:#D57E8C;">
-            <h2 style="color:white;">welcome, {{user}}!</h2>
+          <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;">
+            <h2 style="color:white;">cupertino WIT</h2>
            
             <br>
-            <form action="/start" method="post">
-              <!--week drop down menu incoming-->
+            <!--<form action="/start" method="post">
+              #week drop down menu incoming#
               <label for="weeks" style="color:white;">Choose a week:</label>
 
-              <select name="week" id="week" style="color:#D57E8C">
-                  <option value="1" style="color:#D57E8C">1</option>
-                  <option value="2" style="color:#D57E8C">2</option>
-                  <option value="3" style="color:#D57E8C">3</option>
-                  <option value="4" style="color:#D57E8C">4</option>
-                  <option value="5" style="color:#D57E8C">5</option>
-                  <option value="6" style="color:#D57E8C">6</option>
-                  <option value="7" style="color:#D57E8C">7</option>
-                  <option value="8" style="color:#D57E8C">8</option>
-                  <option value="9" style="color:#D57E8C">9</option>
-                  <option value="10" style="color:#D57E8C">10</option>
-                  <option value="11" style="color:#D57E8C">11</option>
+              <select name="week" id="week" style="color:#C8A4D4">
+                  <option value="1" style="color:#C8A4D4">1</option>
+                  <option value="2" style="color:#C8A4D4">2</option>
+                  <option value="3" style="color:#C8A4D4">3</option>
+                  <option value="4" style="color:#C8A4D4">4</option>
+                  <option value="5" style="color:#C8A4D4">5</option>
+                  <option value="6" style="color:#C8A4D4">6</option>
+                  <option value="7" style="color:#C8A4D4">7</option>
+                  <option value="8" style="color:#C8A4D4">8</option>
+                  <option value="9" style="color:#C8A4D4">9</option>
+                  <option value="10" style="color:#C8A4D4">10</option>
+                  <option value="11" style="color:#C8A4D4">11</option>
               </select>
-              <!--week drop down menu END-->
-              <button class="btn-sm round">Take Practice Test</button>
-            </form>
-            <br>
-            <form action="/qform" method="get">
-              <button class="btn-sm round">Add Question</button>
-            </form>
-            <br>
-            <form action="/logout" method="post">
-              <button class="btn-sm round">Log Out</button>
-            </form>
+              week drop down menu END-->
+               <p style="color:white">Our club is a club to (insert description of club here) etc. etc. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl.dfakadsjk;lf</p>
           </div>
         </div><!--end of "top left panel"-->
       
@@ -72,16 +63,16 @@
 
 
             
-          <div class="card-body" style="border-radius:6px; background-color:#D57E8C;">
-            <h4 style="color:white;">time to competition:</h4>
+          <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;">
+            <h4 style="color:white;">time to next meeting:</h4>
             <!--timer-->
             <h3 style="color:white;" id="demo"></h3>
           </div>
             <br>
           
-          <div class="card-body" style="border-radius:6px; background-color:#D57E8C;">
-            <a href="https://drive.google.com/drive/u/0/folders/0AHYacw1pbtK1Uk9PVA" style="color:white;font-family:sans-serif;">Google Drive</a><br><br>
-            <a href="https://drive.google.com/drive/u/0/folders/0AHYacw1pbtK1Uk9PVA" style="color:white;font-family:sans-serif;">Official Study Guide</a>
+          <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;">
+            <a href="https://docs.google.com/presentation/d/1ixj4MsDV8pElWS2KSkF0ZgK15FxYe7k1YozD9SnmS8I/edit?usp=sharing" style="color:white;font-family:sans-serif;">Last Meeting's Slides</a><br><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScFM9lRSeqApuHB5w2124CSvG5nam3kCbyjgxXZR0ZLHPIkmQ/closedform" style="color:white;font-family:sans-serif;">Officer App</a>
           </div>
         </div>
 
@@ -97,26 +88,26 @@
         <div class="col wf"><!--bottom left panel start-->
           
 
-          <div class="card-body" style="border-radius:6px; background-color:#D57E8C;"><!--start of pink card body-->
+          <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;"><!--start of pink card body-->
             <div class="row wf">
-              <h2 style="color:white;">teams</h2>
+              <h2 style="color:white;">officer team</h2>
 
               <div class="col wf">
                 <div class="card-body" style="border-radius:6px; background-color:white;">
-                  <img src="https://japanbowl.org/wp-content/uploads/2023/06/JBD2-1709-1-scaled.jpg" class="card-img" alt="...">
+                  <img src="https://www.publicdomainpictures.net/pictures/70000/velka/purple-flowers-1390066627sQu.jpg" class="card-img" alt="...">
 
-                  <h2 style="color:#D57E8C;">level 2</h2>
-                  <a href="https://docs.google.com/document/d/1gdnRVnVC3niXBeI6KR3F7C7L8SA0Zc-UmNSnLa-FA_Y/edit" style="color:#D57E8C;">sentences</a>
+                  <h2 style="color:#C8A4D4;">name1</h2>
+                  <a style="color:#C8A4D4;">description</a>
                 </div>
               </div>
 
               <div class="col wf">
                 <div class="card-body" style="border-radius:6px; background-color:white;">
 
-                  <img src="https://japanbowl.org/wp-content/uploads/2023/06/JBD1-1765-scaled.jpg" class="card-img" alt="...">
+                  <img src="https://th.bing.com/th/id/OIP.UznHpJrqp_j7RscQDB4aagAAAA?rs=1&pid=ImgDetMain" class="card-img" alt="...">
 
-                  <h2 style="color:#D57E8C;">level 3</h2>
-                  <a href="https://docs.google.com/document/d/1MBZzhVd1tjWinS-4R7yGYOgXlk02nmp2kO1IOk31LTg/edit" style="color:#D57E8C;">sentences</a>
+                  <h2 style="color:#C8A4D4;">name2</h2>
+                  <a style="color:#C8A4D4;">description</a>
 
                 </div>
               </div>
@@ -124,10 +115,10 @@
               <div class="col wf">
                 <div class="card-body" style="border-radius:6px; background-color:white;">
 
-                  <img src="https://japanbowl.org/wp-content/uploads/2023/06/JBD1-1930-1-scaled.jpg" class="card-img" alt="...">
+                  <img src="https://th.bing.com/th/id/R.4b09b067a814c117ec1a34bbb021a00e?rik=Mytxyc8rtpBNIA&riu=http%3a%2f%2fwww.hdwallpapers.in%2fwalls%2fpurple_flowers-normal.jpg&ehk=1LFwUfNeO0jPoxDXFaA5LDa%2fU8JQPBSRMtZtI0VTzGI%3d&risl=&pid=ImgRaw&r=0" class="card-img" alt="...">
 
-                  <h2 style="color:#D57E8C;">level 4</h2>
-                  <a href="https://docs.google.com/document/d/1nQdiG1WB_qmM_BEyxp7UoZXdokDIH8L0363fJV5pAMA/edit?usp=sharing" style="color:#D57E8C;">sentences</a>
+                  <h2 style="color:#C8A4D4;">name3</h2>
+                  <a style="color:#C8A4D4;">description</a>
 
                 </div>
               </div>
@@ -141,9 +132,9 @@
 
         <div class="col wf">
           
-            <div class="card-body" style="border-radius:6px; overflow-y:scroll; max-height:332px;  background-color:#D57E8C;"><!--start of pink card body-->
+            <div class="card-body" style="border-radius:6px; overflow-y:scroll; max-height:332px;  background-color:#C8A4D4;"><!--start of pink card body-->
             
-              <h2 style="color:white;">past attempts</h2>
+              <h2 style="color:white;">past challenges</h2>
               <div class="row wf">
                 
                   <!--displaying each attempt-->
@@ -219,7 +210,7 @@
     <!--timer-->
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Apr 17, 2024 24:00:00").getTime();
+      var countDownDate = new Date("Jun 31, 2024 24:00:00").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function() {
