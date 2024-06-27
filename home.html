@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+ 
+  </header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+      
+
+      <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+
+    </head>
+    <body>
+    
+    {% with messages = get_flashed_messages()%}
+      {% if messages%}
+        {% for message in messages%}
+          <p style="color:#D57E8C;">{{message}}</p>
+        {%endfor%}
+      {%endif%}
+    {%endwith%}
+    <div class="container" ><!--container for attempting bootstrap stuff-->
+
+
+      
+      <div class="row"> <!--top row, currently contains welcome message & action buttons, time to competition, and gdrive links-->
+        <div class="col wf"><br><!--start of "top left panel"-->
+          <div class="card-body" style="border-radius:6px; background-color:#D57E8C;">
+            <h2 style="color:white;">welcome, {{user}}!</h2>
+           
+            <br>
+            <form action="/start" method="post">
+              <!--week drop down menu incoming-->
+              <label for="weeks" style="color:white;">Choose a week:</label>
+
+              <select name="week" id="week" style="color:#D57E8C">
+                  <option value="1" style="color:#D57E8C">1</option>
+                  <option value="2" style="color:#D57E8C">2</option>
+                  <option value="3" style="color:#D57E8C">3</option>
+                  <option value="4" style="color:#D57E8C">4</option>
+                  <option value="5" style="color:#D57E8C">5</option>
+                  <option value="6" style="color:#D57E8C">6</option>
+                  <option value="7" style="color:#D57E8C">7</option>
+                  <option value="8" style="color:#D57E8C">8</option>
+                  <option value="9" style="color:#D57E8C">9</option>
+                  <option value="10" style="color:#D57E8C">10</option>
+                  <option value="11" style="color:#D57E8C">11</option>
+              </select>
+              <!--week drop down menu END-->
+              <button class="btn-sm round">Take Practice Test</button>
+            </form>
+            <br>
+            <form action="/qform" method="get">
+              <button class="btn-sm round">Add Question</button>
+            </form>
+            <br>
+            <form action="/logout" method="post">
+              <button class="btn-sm round">Log Out</button>
+            </form>
+          </div>
+        </div><!--end of "top left panel"-->
+      
+        
+          
+
+        <div class="col wf"><br>
+
+
+            
+          <div class="card-body" style="border-radius:6px; background-color:#D57E8C;">
+            <h4 style="color:white;">time to competition:</h4>
+            <!--timer-->
+            <h3 style="color:white;" id="demo"></h3>
+          </div>
+            <br>
+          
+          <div class="card-body" style="border-radius:6px; background-color:#D57E8C;">
+            <a href="https://drive.google.com/drive/u/0/folders/0AHYacw1pbtK1Uk9PVA" style="color:white;font-family:sans-serif;">Google Drive</a><br><br>
+            <a href="https://drive.google.com/drive/u/0/folders/0AHYacw1pbtK1Uk9PVA" style="color:white;font-family:sans-serif;">Official Study Guide</a>
+          </div>
+        </div>
+
+
+    
+
+
+ 
+
+      </div>
+
+      <div class="row wf"><!--second row, with teams and past attempts display-->
+        <div class="col wf"><!--bottom left panel start-->
+          
+
+          <div class="card-body" style="border-radius:6px; background-color:#D57E8C;"><!--start of pink card body-->
+            <div class="row wf">
+              <h2 style="color:white;">teams</h2>
+
+              <div class="col wf">
+                <div class="card-body" style="border-radius:6px; background-color:white;">
+                  <img src="https://japanbowl.org/wp-content/uploads/2023/06/JBD2-1709-1-scaled.jpg" class="card-img" alt="...">
+
+                  <h2 style="color:#D57E8C;">level 2</h2>
+                  <a href="https://docs.google.com/document/d/1gdnRVnVC3niXBeI6KR3F7C7L8SA0Zc-UmNSnLa-FA_Y/edit" style="color:#D57E8C;">sentences</a>
+                </div>
+              </div>
+
+              <div class="col wf">
+                <div class="card-body" style="border-radius:6px; background-color:white;">
+
+                  <img src="https://japanbowl.org/wp-content/uploads/2023/06/JBD1-1765-scaled.jpg" class="card-img" alt="...">
+
+                  <h2 style="color:#D57E8C;">level 3</h2>
+                  <a href="https://docs.google.com/document/d/1MBZzhVd1tjWinS-4R7yGYOgXlk02nmp2kO1IOk31LTg/edit" style="color:#D57E8C;">sentences</a>
+
+                </div>
+              </div>
+
+              <div class="col wf">
+                <div class="card-body" style="border-radius:6px; background-color:white;">
+
+                  <img src="https://japanbowl.org/wp-content/uploads/2023/06/JBD1-1930-1-scaled.jpg" class="card-img" alt="...">
+
+                  <h2 style="color:#D57E8C;">level 4</h2>
+                  <a href="https://docs.google.com/document/d/1nQdiG1WB_qmM_BEyxp7UoZXdokDIH8L0363fJV5pAMA/edit?usp=sharing" style="color:#D57E8C;">sentences</a>
+
+                </div>
+              </div>
+
+
+
+            </div> 
+          </div> 
+        </div>
+
+
+        <div class="col wf">
+          
+            <div class="card-body" style="border-radius:6px; overflow-y:scroll; max-height:332px;  background-color:#D57E8C;"><!--start of pink card body-->
+            
+              <h2 style="color:white;">past attempts</h2>
+              <div class="row wf">
+                
+                  <!--displaying each attempt-->
+                    
+                  
+                  <!--displaying each attempt END-->
+              
+                
+                <!--table attempt-->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      
+                      <th scope="col" style="color:white;">Week</th>
+                      <th scope="col" style="color:white;">Date</th>
+                      <th scope="col" style="color:white;">Score</th>
+                      <th scope="col" style="color:white;">Review</th>
+                      
+                      
+                    </tr>
+                  </thead>
+
+                  <tbody>
+
+                    {%for i in range(len-1,0,-1)%}
+                    <tr>
+                      <td style="color:white;">{{attempts[i].getweek()}}</td>
+                      <td style="color:white;">{{attempts[i].getdate().strftime('%Y-%m-%d %I:%M %p')}}</td>
+                      <td style="color:white;">{{attempts[i].getscore()}} / {{attempts[i].getnumqs()}}</td>
+                      <td style="color:white;">
+                        <form action="/view" method="post">
+                          <button class="btn-sm round">View Details</button> 
+                          <input type="hidden" id="attempt_id" name="attempt_id" value={{attempts[i].id}}>
+                        </form>
+                      </td>
+                    </tr>
+                    {%endfor%}
+                  </tbody>
+                </table>
+
+                <!--table attempt END-->
+              </div>
+              
+            </div><!--end of pink card body-->
+        </div>
+        
+         
+        </div><!--end of second row-->
+
+
+  
+
+
+       
+
+    
+
+      
+      
+
+    
+
+      
+
+
+    </div><!--closing for container attempting to do bootstrap-->
+
+    
+  
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!--timer-->
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Apr 17, 2024 24:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+      }, 1000);
+    </script>
+    <!--end of timer-->
+    
+    
+    </body>
+    </html>
+
+    
+    
+
+  
+  
+ 
+
+</html>
