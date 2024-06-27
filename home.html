@@ -18,33 +18,16 @@
     <body>
     
      
-    <div class="container" ><!--container for attempting bootstrap stuff-->
+    <div class="container" ><!--container for bootstrap stuff-->
 
 
       
-      <div class="row"> <!--top row, currently contains welcome message & action buttons, time to competition, and gdrive links-->
+      <div class="row"> <!--top row-->
         <div class="col wf"><br><!--start of "top left panel"-->
           <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;">
             <h2 style="color:white;">cupertino WIT</h2>
            
-            <br>
-            <!--<form action="/start" method="post">
-              #week drop down menu incoming#
-              <label for="weeks" style="color:white;">Choose a week:</label>
-
-              <select name="week" id="week" style="color:#C8A4D4">
-                  <option value="1" style="color:#C8A4D4">1</option>
-                  <option value="2" style="color:#C8A4D4">2</option>
-                  <option value="3" style="color:#C8A4D4">3</option>
-                  <option value="4" style="color:#C8A4D4">4</option>
-                  <option value="5" style="color:#C8A4D4">5</option>
-                  <option value="6" style="color:#C8A4D4">6</option>
-                  <option value="7" style="color:#C8A4D4">7</option>
-                  <option value="8" style="color:#C8A4D4">8</option>
-                  <option value="9" style="color:#C8A4D4">9</option>
-                  <option value="10" style="color:#C8A4D4">10</option>
-                  <option value="11" style="color:#C8A4D4">11</option>
-              </select>
+            
               week drop down menu END-->
                <p style="color:white">Our club is a club to (insert description of club here) etc. etc. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl.dfakadsjk;lf</p>
           </div>
@@ -78,11 +61,11 @@
 
       </div>
 
-      <div class="row wf"><!--second row, with teams and past attempts display-->
+      <div class="row wf"><!--second row, with officers and motm display-->
         <div class="col wf"><!--bottom left panel start-->
           
 
-          <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;"><!--start of pink card body-->
+          <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;"><!--start of colored card body-->
             <div class="row wf">
               <h2 style="color:white;">officer team</h2>
 
@@ -138,14 +121,11 @@
               
                 
                 <!--table attempt-->
-                <table class="table">
+                <!--<table class="table">
                   <thead>
                     <tr>
                       
-                      <th scope="col" style="color:white;">Week</th>
-                      <th scope="col" style="color:white;">Date</th>
-                      <th scope="col" style="color:white;">Score</th>
-                      <th scope="col" style="color:white;">Review</th>
+       
                       
                       
                     </tr>
@@ -153,21 +133,9 @@
 
                   <tbody>
 
-                    {%for i in range(len-1,0,-1)%}
-                    <tr>
-                      <td style="color:white;">{{attempts[i].getweek()}}</td>
-                      <td style="color:white;">{{attempts[i].getdate().strftime('%Y-%m-%d %I:%M %p')}}</td>
-                      <td style="color:white;">{{attempts[i].getscore()}} / {{attempts[i].getnumqs()}}</td>
-                      <td style="color:white;">
-                        <form action="/view" method="post">
-                          <button class="btn-sm round">View Details</button> 
-                          <input type="hidden" id="attempt_id" name="attempt_id" value={{attempts[i].id}}>
-                        </form>
-                      </td>
-                    </tr>
-                    {%endfor%}
+                    
                   </tbody>
-                </table>
+                </table>-->
 
                 <!--table attempt END-->
               </div>
