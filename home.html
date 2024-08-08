@@ -1,192 +1,259 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
- 
-  </header>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-      
 
-      <link rel="stylesheet" type="text/css" href="style.css">
+</header>
+<!DOCTYPE html>
+<html lang="en">
 
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/27d9d5f404.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--nav-->
     
-      <!-- nav bar -->
-      <nav class="navbar navbar-expand-lg navbar-light h4" style="background-color:#C8A4D4;">
-        <div class="container">
-          <a class="navbar-brand mx-auto" href="#">Women in Tech</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Homepage</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#officer-team">Officer Team</a> 
-              </li>
-              <li class="nav-item dropdown mx-3">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Curriculum
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Swift (Sem 1)</a>
-                  <a class="dropdown-item" href="#">Technovation (Sem 2)</a>
-                </div>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Competition Highlights</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
+    <section class="top">
+        <div class="nav-bar">
+        <img src="imgs/WIT.png" alt="">
+        <nav id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            
+            <ul>
+                <li><a href="">Officer Team</a></li>
+                <li><a href="">Curriculum</a></li>
+                <li><a href="">Competition Highlights</a></li>
+                <li><a href="">Contact Us</a></li>
             </ul>
-          </div>
+           
+        </nav>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </div>
+
+
+        <!--main-->
+        <section>
+
+            <div class="main">
+                <h1>Welcome to Cupertino</h1>
+                <h1>WOMEN IN TECH</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod omnis sit.</p>
+                <div class="btn">
+                    <a href="">Learn more</a>
+                </div>
+
+
+            </div>
+        </section>
+    </section>
+
+    <!--time-->
+    <section>
+        <div class="time">
+
+            <h2>Time to next meeting:</h2>
+            <h2 id="demo"></h2>
+            <div class="btn">
+                <a href="">Last meeting slides</a>
+            </div>
         </div>
-      </nav>
-    
-      
+    </section>
 
-     
-      <div class="container" ><!--container for bootstrap stuff-->
-
-      <!-- Landing Page Main Section -->
-      <div class="container-fluid d-flex align-items-center justify-content-center p-5" style="background-color: #F7F4F8; height: 80vh;">
-        <div class="row">
-          <div class="col text-center">
-            <h1 class="display-4" style="color: #C8A4D4;">Welcome to Women in Tech</h1>
-            <p class="lead" style="color: #6c757d;">tagline lolol</p>
-            <a href="#cards" class="btn btn-primary btn-lg" style="background-color: #C8A4D4; border-color: #C8A4D4;">Learn More</a>
-          </div>
+    <!--about-->
+    <section>
+        <div class="about">
+            <div class="abt-text">
+                <h2>About Cupertino WIT</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At possimus hic molestias? Exercitationem, in nisi rem cupiditate, sint sequi, amet necessitatibus assumenda quo ut ducimus numquam consectetur quibusdam consequuntur corrupti.</p>
+            </div>
+            <img src="imgs/women_computer.jpg" alt="">
         </div>
-      </div>
+    </section>
 
+    <!--meet the officers-->
 
-      
-      <!-- Cards Section -->
-      <div id="cards" class="container mt-5">
-        <!-- First Row -->
-        <div class="row">
-          <div class="col wf">
-            <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;">
-              <h2 style="color:white;">Cupertino WIT</h2>
-              <p style="color:white">Our club is a club to (insert description of club here) etc. etc. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl. abc def eidk asdioejdas;eidf eis;ajldkfie jadpeofddkl.dfakadsjk;lf</p>
+    <section>
+        <div class="officers">
+            <h2>Meet the Officers</h2>
+            
+            <div class="officer-card">
+                <img src="imgs/preethi.jpeg" alt="">
+                <div class="card-text">
+                    <h3>Preethi Saitish</h3>
+                    <h4>President</h4>
+                    <br>
+                    <br>
+                    <p>Grade: 12th</p>
+                    <p>Favorite programming language: Python</p>
+
+                </div>
             </div>
-          </div>
-          <div class="col wf">
-            <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;">
-              <h4 style="color:white;">Time to next meeting:</h4>
-              <h3 style="color:white;" id="demo"></h3>
+            <div class="officer-card">
+                <img src="imgs/pragya.JPG" alt="">
+                <div class="card-text">
+                    <h3>Pragya Sharma</h3>
+                    <h4>Vice President</h4>
+                    <br>
+                    <br>
+                    <p>Grade: 11th</p>
+                    <p>Favorite programming language: Python</p>
+
+                </div>
             </div>
-            <br>
-            <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;">
-              <a href="https://docs.google.com/presentation/d/1ixj4MsDV8pElWS2KSkF0ZgK15FxYe7k1YozD9SnmS8I/edit?usp=sharing" style="color:white;font-family:sans-serif;">Last Meeting's Slides</a><br><br>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScFM9lRSeqApuHB5w2124CSvG5nam3kCbyjgxXZR0ZLHPIkmQ/closedform" style="color:white;font-family:sans-serif;">Officer App</a>
+            <div class="officer-card">
+                <img src="imgs/prachi.jpg" alt="">
+                <div class="card-text">
+                    <h3>Prachi Marfatia</h3>
+                    <h4>Secretary/Treasurer</h4>
+                    <br>
+                    <br>
+                    <p>Grade: 12th</p>
+                    <p>Favorite programming language: Java</p>
+
+                </div>
             </div>
-          </div>
+            <div class="officer-card">
+                <img src="imgs/alison.jpeg" alt="">
+                <div class="card-text">
+                    <h3>Alison Liu</h3>
+                    <h4>Public Relations</h4>
+                    <br>
+                    <br>
+                    <p>Grade: 11th</p>
+                    <p>Favorite programming language: Java</p>
+
+                </div>
+            </div>
+            <div class="officer-card">
+                <img src="imgs/kalyaa.jpg" alt="">
+                <div class="card-text">
+                    <h3>Kalyaa Pradeep</h3>
+                    <h4>Workshop Lead</h4>
+                    <br>
+                    <br>
+                    <p>Grade: 11th</p>
+                    <p>Favorite programming language: Java</p>
+
+                </div>
+            </div>
+            <div class="officer-card">
+                <img src="imgs/kavya.JPG" alt="">
+                <div class="card-text">
+                    <h3>Kavya Gupta</h3>
+                    <h4>Outreach Lead</h4>
+                    <br>
+                    <br>
+                    <p>Grade: 11th</p>
+                    <p>Favorite programming language: Java</p>
+
+                </div>
+            </div>
+            <div class="officer-card">
+                <img src="imgs/neha.jpg" alt="">
+                <div class="card-text">
+                    <h3>Neha Shaik</h3>
+                    <h4>Events Coordinater</h4>
+                    <br>
+                    <br>
+                    <p>Grade: 10th</p>
+                    <p>Favorite programming language: Python</p>
+
+                </div>
+            </div>
         </div>
-      </div>
+         
+    </section>
 
-      <!-- Officer Team Section -->
-      <div id="officer-team" class="container mt-5">
-        <div class="card-body" style="border-radius:6px; background-color:#C8A4D4;">
-          <h2 style="color:white;">Officer Team</h2>
-          <!-- First Row -->
-          <div class="row wf">
-            <div class="col wf">
-              <div class="card-body" style="border-radius:6px; background-color:white;">
-                <img src="https://www.publicdomainpictures.net/pictures/70000/velka/purple-flowers-1390066627sQu.jpg" class="card-img" alt="...">
-                <h2 style="color:#C8A4D4;">name1</h2>
-                <a style="color:#C8A4D4;">description</a>
-              </div>
-            </div>
-            <div class="col wf">
-              <div class="card-body" style="border-radius:6px; background-color:white;">
-                <img src="https://th.bing.com/th/id/OIP.UznHpJrqp_j7RscQDB4aagAAAA?rs=1&pid=ImgDetMain" class="card-img" alt="...">
-                <h2 style="color:#C8A4D4;">name2</h2>
-                <a style="color:#C8A4D4;">description</a>
-              </div>
-            </div>
-            <div class="col wf">
-              <div class="card-body" style="border-radius:6px; background-color:white;">
-                <img src="https://th.bing.com/th/id/R.4b09b067a814c117ec1a34bbb021a00e?rik=Mytxyc8rtpBNIA&riu=http%3a%2f%2fwww.hdwallpapers.in%2fwalls%2fpurple_flowers-normal.jpg&ehk=1LFwUfNeO0jPoxDXFaA5LDa%2fU8JQPBSRMtZtI0VTzGI%3d&risl=&pid=ImgRaw&r=0" class="card-img" alt="...">
-                <h2 style="color:#C8A4D4;">name3</h2>
-                <a style="color:#C8A4D4;">description</a>
-              </div>
-            </div>
-          </div>
-          <!-- Second Row -->
-          <div class="row wf mt-4">
-            <div class="col wf">
-              <div class="card-body" style="border-radius:6px; background-color:white;">
-                <img src="https://www.publicdomainpictures.net/pictures/70000/velka/purple-flowers-1390066627sQu.jpg" class="card-img" alt="...">
-                <h2 style="color:#C8A4D4;">name1</h2>
-                <a style="color:#C8A4D4;">description</a>
-              </div>
-            </div>
-            <div class="col wf">
-              <div class="card-body" style="border-radius:6px; background-color:white;">
-                <img src="https://th.bing.com/th/id/OIP.UznHpJrqp_j7RscQDB4aagAAAA?rs=1&pid=ImgDetMain" class="card-img" alt="...">
-                <h2 style="color:#C8A4D4;">name2</h2>
-                <a style="color:#C8A4D4;">description</a>
-              </div>
-            </div>
-            <div class="col wf">
-              <div class="card-body" style="border-radius:6px; background-color:white;">
-                <img src="https://th.bing.com/th/id/OIP.UznHpJrqp_j7RscQDB4aagAAAA?rs=1&pid=ImgDetMain" class="card-img" alt="...">
-                <h2 style="color:#C8A4D4;">name2</h2>
-                <a style="color:#C8A4D4;">description</a>
-              </div>
-            </div>
-          </div>
+    <!--footer-->
+    <section>   
+        <div class="footer">
+            <h2>Contact Us</h2>
+            <p>Instagram: <a href="https://www.instagram.com/cupertinohswit/">@cupertinohswit</a></p>
+            <p>Email: chswomenintech@gmail.com</p>
+            <p>Meeting time: Every Wednesday</p>
         </div>
-      </div>
+    </section>
 
-    </div><!--closing of container for bootstrap-->
-
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <!--timer-->
     <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Jun 31, 2024 24:00:00").getTime();
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 8, 2024 24:00:00").getTime();
 
-      // Update the count down every 1 second
-      var x = setInterval(function() {
+        // Update the count down every 1 second
+        var x = setInterval(function () {
 
-      // Get today's date and time
-      var now = new Date().getTime();
+            // Get today's date and time
+            var now = new Date().getTime();
 
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
 
-      // If the count down is finished, write some text
-      if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-      }, 1000);
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
     </script>
     <!--end of timer-->
-    
-    
-    </body>
-    </html>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            
+        }
+    </script>
+    <!--open close menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-275px";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
+
 </html>
