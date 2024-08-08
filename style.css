@@ -121,7 +121,7 @@ h1{
 }
 .top{
    
-    background-image: linear-gradient(rgba(38, 22, 69, 0.7), rgba(38, 22, 69, 0.7)), url("womenit.webp");
+    background-image: linear-gradient(rgba(38, 22, 69, 0.7), rgba(38, 22, 69, 0.7)), url(womenit.webp);
    background-size:cover;
     background-repeat:no-repeat;
 
