@@ -1,63 +1,82 @@
 body{
     background-color: rgba(38, 22, 69, 1);
     font-family:'Poppins';
-}
-/*nav*/
-nav{
+ }
+ /*nav*/
+ nav{
     display: flex;
     padding: 5%;
     justify-content:space-between;
-}
-nav li{
+ }
+ nav li{
     display:inline-block;
     padding:20px;
     padding-top:30px;
     font-weight:300;
-
-
-}
-li a{
+ }
+ 
+ 
+ p{
+    font-size: 20px;
+ }
+ html {
+    scroll-behavior: smooth;
+ }
+ 
+ 
+ li a{
     text-decoration:none;
     color:white;
-}
-.nav-bar img{
+    font-size: 20px;
+ }
+ .nav-bar img{
    width:12%;
    height:12%;
    padding-top:35px;
-
-   
-}
-.nav-bar{
+ 
+ 
+  
+ }
+ .nav-bar{
     display:flex;
     justify-content:space-between;
     padding: 30px;
-}
-.nav-bar ul{
+ }
+ .nav-bar ul{
     display:flex;
-}
-nav li a:hover{
+ }
+ nav li a:hover{
     color:rgba(150, 115, 178, 1);
     transition:0.3s;
-}
-.nav-bar .fa-solid{
+ }
+ .nav-bar .fa-solid{
     display:none;
-}
-
-@media(max-width:900px){
+ }
+ 
+ 
+ @media(max-width:900px){
+    html, body{
+        height:100%;
+        margin: 0;
+        padding: 0;
+    }
     nav ul li{
         display:block;
-       
+      
         padding-left:0;
     }
+    .nav-bar{
+        position: relative;
+    }
     nav{
-        position:absolute;
+        position:fixed;
         background:rgba(150, 115, 178, 1);
         height:100vh;
         width:275px;
         top:0;
         right:-275px;
         text-align:left;
-       
+      
         display:block;
         transition: 1s;
     }
@@ -66,70 +85,76 @@ nav li a:hover{
     }
     .nav-bar ul{
         display:block;
-
-        
+ 
+ 
+       
     }
-
-    
+ 
+ 
+   
    .nav-bar .fa-solid{
     display:block;
     color:white;
     margin:10px;
     font-size:22px;
     cursor:pointer;
-   
+  
    }
    .nav-bar .fa-bars{
     padding-top:35px;
    }
-   
-nav li a:hover{
+  
+ nav li a:hover{
     color:white;
-   
-}
-}
-
-/*main*/
-.main{
+  
+ }
+ }
+ 
+ 
+ /*main*/
+ .main{
     padding:8%;
     color:white;
     padding-top:0%;
     line-height:50px;
     text-align:start;
-}
-h1{
+ }
+ h1{
     font-weight:600;
     font-size:60px;
-}
-.btn{
+ }
+ .btn{
     color:white;
     padding:10px;
     padding-left:20px;
     padding-right:20px;
     background-color:rgba(150, 115, 178, 1);
-}
-.btn a{
+ }
+ .btn a{
     color:white;
     text-decoration:none;
-
-}
-.btn:hover{
+ 
+ 
+ }
+ .btn:hover{
     box-shadow:0px 0px 10px 5px rgba(255, 255, 255, 0.2);
-}
-.main p{
+ }
+ .main p{
     font-weight:300;
-}
-.top{
-   
+ }
+ .top{
+  
     background-image: linear-gradient(rgba(38, 22, 69, 0.7), rgba(38, 22, 69, 0.7)), url(womenit.webp);
    background-size:cover;
     background-repeat:no-repeat;
-
-   
-}
-
-/*time*/
-.time{
+ 
+ 
+  
+ }
+ 
+ 
+ /*time*/
+ .slides{
     margin:50px;
     margin-top:45px;
     margin-bottom:45px;
@@ -140,109 +165,121 @@ h1{
     line-height:80px;
     border-radius:10px;
     color:rgba(150, 115, 178, 1);
-}
-h2{
+ }
+ h2{
     font-weight:600;
     font-size:35px;
-}
-
-
-/*about*/
-
-.about{
+ }
+ 
+ 
+ 
+ 
+ /*about*/
+ 
+ 
+ .about{
     margin-top:30px;
     margin-bottom:30px;
     background-color:white;
     display:flex;
     color:rgba(150, 115, 178, 1);
-    
-    
-}
-.abt-text{
+   
+   
+ }
+ .abt-text{
     padding:45px;
     align-content:center;
-}
-.about img{
-   
+ }
+ .about img{
+  
     width:50%;
-}
-.about p{
-    font-size:14px;
+    object-fit: cover;
+ }
+ .about p{
+    font-size:20px;
     margin-top:20px;
-}
-
-/*officers*/
-
-.officers{
+ }
+ 
+ 
+ /*officers*/
+ 
+ 
+ .officers{
     background-color:rgba(150, 115, 178, 1);
-    margin:50px;
-    padding:45px;
+    margin:100px;
+    padding:100px;
     border-radius:10px;
-    
-}
-.officers h2{
+   
+ }
+ .officers h2{
     color:white;
     text-align:center;
     padding-bottom:45px;
-}
-
-
-.officer-card{
-    
+ }
+ 
+ 
+ 
+ 
+ .officer-card{
+   
     margin-top:30px;
     margin-bottom:30px;
     background-color:white;
    display:flex;
     color:rgba(150, 115, 178, 1);
     border-radius:10px;
-}
-.card-text{
+ }
+ .card-text{
     padding:50px;
-   
-}
-
-.officer-card img{
+  
+ }
+ 
+ 
+ .officer-card img{
     width:40%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     object-fit:cover;
     height:500px;
     object-position:50% 0;
-}
-
-
-.officer-card p{
-    font-size:14px;
-}
-h4{
+ }
+ 
+ 
+ 
+ 
+ .officer-card p{
+    font-size:20px;
+ }
+ h4{
     font-weight:400;
     font-size:20px;
-}
-.footer{
+ }
+ .footer{
     background-color:white;
     color:rgba(150, 115, 178, 1);
     padding: 50px;
-}
-.footer h2{
+ }
+ .footer h2{
     margin-bottom:30px;
-}
-.footer p{
-    font-size:14px;
-}
-.footer p a{
+ }
+ .footer p{
+    font-size:20px;
+ }
+ .footer p a{
     text-decoration:none;
     color:rgba(150, 115, 178, 1);
-}
-
-@media (max-width: 900px){
+ }
+ 
+ 
+ @media (max-width: 900px){
     .about{
-      flex-direction:column; 
+      flex-direction:column;
     }
     .about img{
        width:100%;
     }
     .officer-card{
-        flex-direction:column; 
+        flex-direction:column;
     }
     .officer-card img{
         width:100%;
@@ -252,13 +289,19 @@ h4{
         height:500px;
         object-position:100% 0;
     }
-   
-   
-
-}
-
-
-
-
-
   
+  
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
